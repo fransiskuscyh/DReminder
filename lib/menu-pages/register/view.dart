@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/register/controller.dart';
+import 'package:flutter_application_1/menu-pages/register/controller.dart';
 import 'package:http/http.dart' as http;
 
 class RegisterView extends StatefulWidget {

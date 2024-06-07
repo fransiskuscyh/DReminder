@@ -1,10 +1,8 @@
 import "package:flutter/material.dart";
-import 'package:flutter_application_1/catatan/view.dart';
-import 'package:flutter_application_1/kategori/view.dart';
-import './home/view.dart';
-import './catatan/view.dart';
-import './kategori/view.dart';
-import './register/view.dart';
+import 'menu-pages/home/view.dart';
+import 'menu-pages/catatan/view.dart';
+import 'menu-pages/kategori/view.dart';
+import 'menu-pages/register/view.dart';
 
 
 class HomeApp extends StatefulWidget {
@@ -22,6 +20,7 @@ class _HomeAppState extends State<HomeApp> {
         '/catatan' : (BuildContext _) => CatatanView(),
         '/kategori' : (BuildContext _) => KategoriView(),
         '/register' : (BuildContext _) => RegisterView(),
+
       },
       initialRoute: '/',
     );

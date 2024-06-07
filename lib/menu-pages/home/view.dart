@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import './controller.dart';
+import 'controller.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -22,7 +22,9 @@ class _HomeViewState extends HomeController {
             UserAccountsDrawerHeader(
               accountName: Text('Dreminder'), 
               accountEmail: Text('by Walmart'),
+              arrowColor: Colors.blue,
             ),
+            Divider(),
             ListTile(
               onTap: () => Navigator.of(context).pushNamed('/'),
               title: Text('Home'),
@@ -30,6 +32,7 @@ class _HomeViewState extends HomeController {
                 child: Icon(Icons.apps),
               ),
             ),
+            Divider(),
             ListTile(
               onTap: () => Navigator.of(context).pushNamed('/catatan'),
               title: Text('Notes'),
@@ -37,6 +40,7 @@ class _HomeViewState extends HomeController {
                 child: Icon(Icons.note),
               ),
             ),
+            Divider(),
             ListTile(
               onTap: () => Navigator.of(context).pushNamed('/kategori'),
               title: Text('Categories'),
@@ -56,7 +60,7 @@ class _HomeViewState extends HomeController {
         ),
       ),
       body: SingleChildScrollView(
-    
+      
       ),
     );
    }

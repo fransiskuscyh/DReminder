@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './controller.dart';
+import 'controller.dart';
 
 class KategoriView extends StatefulWidget {
   @override
