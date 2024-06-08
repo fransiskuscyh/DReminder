@@ -93,8 +93,8 @@ class _CatatanViewState extends CatatanController {
               onChanged: (value) => CheckboxChange(value, index),
               deleteFunction: (context) => deleteTask(index),
             );
-            },
+          },
         ),
-    );
+      );
   }
 }
