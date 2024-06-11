@@ -11,9 +11,10 @@ class _NotesViewState extends NotesController {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('List Notes'),
+          title: Text('Notes'),
+          foregroundColor: Colors.white,
           centerTitle: true,
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.blue,
         ),
     );
   }
