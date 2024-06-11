@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'controller.dart';
 
-class KategoriView extends StatefulWidget {
+class NotesView extends StatefulWidget {
   @override
-  _KategoriViewState createState() => _KategoriViewState();
+  _NotesViewState createState() => _NotesViewState();
 }
 
-class _KategoriViewState extends KategoriController {
+class _NotesViewState extends NotesController {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('List Kategori'),
+          title: Text('List Notes'),
           centerTitle: true,
           backgroundColor: Colors.green,
         ),

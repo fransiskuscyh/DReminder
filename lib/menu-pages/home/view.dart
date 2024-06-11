@@ -10,10 +10,12 @@ class _HomeViewState extends HomeController {
   @override
   Widget build(BuildContext context) {
     return Scaffold (
+      backgroundColor: Colors.blue,
       appBar: AppBar(
       title: Text('DRemind'),
       centerTitle: true,
-      backgroundColor: Colors.blue,
+      foregroundColor: Colors.white,
+      backgroundColor: Colors.blue,    
     ),
       drawer: Drawer(
         child: ListView(
@@ -22,38 +24,39 @@ class _HomeViewState extends HomeController {
             UserAccountsDrawerHeader(
               accountName: Text('Dreminder'), 
               accountEmail: Text('by Walmart'),
-              arrowColor: Colors.blue,
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              // arrowColor: Colors.blue,
             ),
             Divider(),
             ListTile(
               onTap: () => Navigator.of(context).pushNamed('/'),
               title: Text('Home'),
+              textColor: Colors.black,
+              splashColor: Colors.blue,
               leading: CircleAvatar(
                 child: Icon(Icons.apps),
               ),
             ),
             Divider(),
             ListTile(
-              onTap: () => Navigator.of(context).pushNamed('/catatan'),
+              onTap: () => Navigator.of(context).pushNamed('/notes'),
               title: Text('Notes'),
+              textColor: Colors.black,
+              splashColor: Colors.blue,
               leading: CircleAvatar(
                 child: Icon(Icons.note),
               ),
             ),
             Divider(),
             ListTile(
-              onTap: () => Navigator.of(context).pushNamed('/kategori'),
-              title: Text('Categories'),
+              onTap: () => Navigator.of(context).pushNamed('/catatan todo'),
+              title: Text('TO-DO'),
+              textColor: Colors.black,
+              splashColor: Colors.blue,
               leading: CircleAvatar(
                 child: Icon(Icons.note),
-              ),
-            ),
-            Divider(),
-            ListTile(
-              onTap: () => Navigator.of(context).pushNamed('/register'),
-              title: Text('Register'),
-              leading: CircleAvatar(
-                child: Icon(Icons.verified_user),
               ),
             )
           ],

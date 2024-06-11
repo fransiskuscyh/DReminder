@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/data/database.dart';
-import 'package:flutter_application_1/menu-pages/util/dialog_box.dart';
+import 'package:flutter_application_1/menu-pages/util%20todo/dialog_box.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import '../util/todo_tile.dart';
+import '../util todo/todo_tile.dart';
 import 'controller.dart';
 import 'package:hive/hive.dart';
 
@@ -75,7 +75,7 @@ class _CatatanViewState extends CatatanController {
     return Scaffold(
       backgroundColor: Colors.yellow[200],
         appBar: AppBar(
-          title: Text('Notes TO-DO'),
+          title: Text('TO-DO'),
           centerTitle: true,
           backgroundColor: Colors.yellow,
         ),

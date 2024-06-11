@@ -1,9 +1,7 @@
 import "package:flutter/material.dart";
 import 'menu-pages/home/view.dart';
-import 'menu-pages/catatan/view.dart';
-import 'menu-pages/kategori/view.dart';
-import 'menu-pages/register/view.dart';
-
+import 'menu-pages/catatan todo/view.dart';
+import 'menu-pages/notes/view.dart';
 
 class HomeApp extends StatefulWidget {
   @override
@@ -14,13 +12,11 @@ class _HomeAppState extends State<HomeApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'hello',
+      title: 'DReminder',
       routes: {
         '/' : (BuildContext _) => HomeView(),
-        '/catatan' : (BuildContext _) => CatatanView(),
-        '/kategori' : (BuildContext _) => KategoriView(),
-        '/register' : (BuildContext _) => RegisterView(),
-
+        '/catatan todo' : (BuildContext _) => CatatanView(),
+        '/notes' : (BuildContext _) => NotesView(),
       },
       initialRoute: '/',
     );
