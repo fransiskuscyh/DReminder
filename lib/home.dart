@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import 'menu-pages/home/view.dart';
 import 'menu-pages/catatan todo/view.dart';
 import 'menu-pages/notes/view.dart';
+import 'login/view.dart';
 
 class HomeApp extends StatefulWidget {
   @override
@@ -17,6 +18,7 @@ class _HomeAppState extends State<HomeApp> {
         '/' : (BuildContext _) => HomeView(),
         '/catatan todo' : (BuildContext _) => CatatanView(),
         '/notes' : (BuildContext _) => NotesView(),
+        '/login' : (BuildContext _) => LoginScreen(),
       },
       initialRoute: '/',
     );

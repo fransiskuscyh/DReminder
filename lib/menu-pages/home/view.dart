@@ -36,7 +36,7 @@ class _HomeViewState extends HomeController {
               textColor: Colors.black,
               splashColor: Colors.blue,
               leading: CircleAvatar(
-                child: Icon(Icons.apps),
+                child: Icon(Icons.home),
               ),
             ),
             Divider(),
@@ -56,7 +56,17 @@ class _HomeViewState extends HomeController {
               textColor: Colors.black,
               splashColor: Colors.blue,
               leading: CircleAvatar(
-                child: Icon(Icons.note),
+                child: Icon(Icons.sticky_note_2),
+              ),
+            ),
+            Divider(),
+            ListTile(
+              onTap: () => Navigator.of(context).pushNamed('/login'),
+              title: Text('LOGIN'),
+              textColor: Colors.black,
+              splashColor: Colors.blue,
+              leading: CircleAvatar(
+                child: Icon(Icons.login),
               ),
             )
           ],
