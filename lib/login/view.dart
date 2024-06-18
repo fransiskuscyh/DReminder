@@ -52,7 +52,6 @@ class _LoginScreenState extends State<LoginScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Icon(Icons.lock_person_outlined, size: 150, color: Colors.blueGrey[500],),
             Text('LOGIN'),            
             TextField(
               controller: emailController,

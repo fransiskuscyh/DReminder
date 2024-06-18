@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_application_1/menu-pages/util%20todo/my_button.dart';
+import 'package:flutter_application_1/menu-pages/notes/util-notes/my_button.dart';
 
 class DialogBox extends StatelessWidget {
   final dialogController;
@@ -17,7 +17,7 @@ class DialogBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      backgroundColor: Colors.yellow,
+      backgroundColor: Colors.white,
       content: Container(
         height: 200,
         child: Column(

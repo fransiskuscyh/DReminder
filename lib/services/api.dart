@@ -1,9 +1,10 @@
 
 import 'package:dio/dio.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class Api {
   static Dio dio = Dio(BaseOptions(
-    baseUrl: 'http://127.0.0.1:8000/ReminderApi/routes', // Replace with your API URL
+    baseUrl: 'http://localhost/ReminderAPI/public/api', // Replace with your API URL
     headers: {
       'Content-Type': 'application/json',
     },
@@ -17,8 +18,24 @@ class Api {
     return await dio.post('/register', data: {'name': name, 'email': email, 'password': password});
   }
 
-  static Future<Response> getUserProfile(String token) async {
-    dio.options.headers['Authorization'] = 'Bearer $token';
-    return await dio.get('/user-profile');
+  Future<Map<String, dynamic>> getUserProfile() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      String token = prefs.getString('auth_token') ?? '';
+      final response = await dio.get(
+        '/profile',
+        options: Options(
+          headers: {
+            'Authorization': 'Bearer $token',
+          },
+        ),
+      );
+      return response.data;
+    } catch (e) {
+      if (e is DioError) {
+        throw Exception('Failed to load user profile: ${e.response?.data['message'] ?? e.message}');
+      }
+      throw Exception('Failed to load user profile: $e');
+    }
   }
 }

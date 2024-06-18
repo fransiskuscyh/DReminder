@@ -43,7 +43,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Icon(Icons.app_registration_rounded, size: 150, color: Colors.blueGrey[500],),
             TextField(
               controller: nameController,
               decoration: InputDecoration(labelText: 'Name'),
@@ -63,6 +62,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               onPressed: registerUser,
               child: Text('Register', style: TextStyle(color: Colors.white)),
             ),
+            Icon(Icons.app_registration_rounded, size: 150, color: Colors.blueGrey[500],),
           ],
         ),
       ),
