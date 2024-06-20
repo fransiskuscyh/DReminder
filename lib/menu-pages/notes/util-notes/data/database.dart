@@ -14,7 +14,7 @@ class NotesDatabase {
   }
 
   void loadData() {
-    NotesList = _myBox.get("NOTES"); 
+    NotesList = _myBox.get("NOTES");
   }
 
   void updateDatabase() {

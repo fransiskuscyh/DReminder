@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/register/controller.dart';
-import 'package:flutter_application_1/services/api.dart';
+import 'package:flutter_application_1/services/api.dart'; 
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -30,8 +30,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
       print('Registration successful. Token: $token');
     } catch (e) {
-      print('Registration error: $e');
-      // Handle registration error
+      print('Registration error: $e');// Handle registration error
     }
   }
 
@@ -62,7 +61,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
               onPressed: registerUser,
               child: Text('Register', style: TextStyle(color: Colors.white)),
             ),
-            Icon(Icons.app_registration_rounded, size: 150, color: Colors.blueGrey[500],),
           ],
         ),
       ),

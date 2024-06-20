@@ -23,11 +23,12 @@ class DialogBox extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children:  [
-          TextField(
+          TextFormField(
             controller: dialogController,
             decoration: InputDecoration(
               border: OutlineInputBorder(),
-              hintText: "Add a new task"
+              hintText: "Type notes",
+              
             ),
           ),
           Row(

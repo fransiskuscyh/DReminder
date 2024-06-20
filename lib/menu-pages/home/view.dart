@@ -62,11 +62,11 @@ class _HomeViewState extends HomeController {
             Divider(),
             ListTile(
               onTap: () => Navigator.of(context).pushNamed('/login'),
-              title: Text('LOGIN'),
+              title: Text('LogOut'),
               textColor: Colors.black,
               splashColor: Colors.blue,
               leading: CircleAvatar(
-                child: Icon(Icons.login),
+                child: Icon(Icons.logout),
               ),
             )
           ],

@@ -25,10 +25,18 @@ class NotesTile extends StatelessWidget {
           children: [
             SlidableAction(
               onPressed: deleteFunction,
-              icon: Icons.delete,
-              backgroundColor: Colors.red.shade300,
+              icon: Icons.update,
+              backgroundColor: Colors.blue.shade300,
               borderRadius: BorderRadius.circular(12),
-              )
+              foregroundColor: Colors.white,
+              ),
+              SlidableAction(
+              onPressed: deleteFunction,
+              icon: Icons.delete,
+              backgroundColor: Colors.blue.shade300,
+              borderRadius: BorderRadius.circular(12),
+              foregroundColor: Colors.white,
+              ),
             ],
           ),
         child: Container(
