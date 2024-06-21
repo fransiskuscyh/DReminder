@@ -43,11 +43,6 @@ class NotesTile extends StatelessWidget {
           padding: EdgeInsets.all(30),
           child: Row(
             children: [
-              // Checkbox(
-              //   value: taskCompleted, 
-              //   onChanged: onChanged,
-              //   activeColor: Colors.black,
-              // ),
               Text(
                 taskName,
                 style: TextStyle(

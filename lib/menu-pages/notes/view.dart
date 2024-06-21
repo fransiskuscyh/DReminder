@@ -50,7 +50,6 @@ class _NotesViewState extends NotesController {
       db.NotesList.add([_dialogController.text, false]);
       _dialogController.clear();
     });
-    Navigator.of(context).pop();
     db.updateDatabase();
   }
 
