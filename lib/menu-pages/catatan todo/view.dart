@@ -45,7 +45,6 @@ class _CatatanViewState extends CatatanController {
       db.toDoList.add([_dialogController.text, false]);
       _dialogController.clear();
     });
-    Navigator.of(context).pop();
     db.updateDatabase();
   }
 
